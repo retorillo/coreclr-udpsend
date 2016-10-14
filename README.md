@@ -1,17 +1,19 @@
 # coreclr-udpsend
 
-Tested on CoreCLR 1.0.0-preview2-003131
+A simple UDP datagram send client and echo back server by using CoreCLR.
 
-## Run as receiver
+Tested on `CoreCLR 1.0.0-preview2-003131`
+
+## Run as server
 
 ```bash
-dotnet run * 61000
+dotnet run localhost 61000
 ```
 
-## Run as sender
+## Run as client
 
 ```bash
-dotnet run <receiver.hostname> 61000
+dotnet run <serverHostname> 61000
 ```
 
 ## License
